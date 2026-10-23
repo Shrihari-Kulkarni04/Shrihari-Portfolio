@@ -2582,7 +2582,9 @@ main,
   line-height: 1.9;
   margin-bottom: 22px;
 }
-
+.footer-logo-dot {
+  color: var(--cyan, #00d4ff);
+}
 .footer-status {
   display: inline-flex;
   align-items: center;
