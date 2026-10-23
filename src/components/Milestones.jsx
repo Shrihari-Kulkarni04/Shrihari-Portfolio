@@ -1,4 +1,3 @@
-
 import React from "react";
 
 const milestones = [
@@ -36,7 +35,6 @@ function Milestones() {
     <section className="milestones-section" id="milestones">
       <div className="milestones-container">
         <span className="section-eyebrow">
-          <span className="status-dot" />
           08 / MILESTONES
         </span>
 

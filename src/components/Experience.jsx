@@ -39,7 +39,6 @@ function Experience() {
     <section className="experience-section" id="experience">
       <div className="experience-container">
         <span className="section-eyebrow">
-          <span className="status-dot" />
           07 / EXPERIENCE
         </span>
 

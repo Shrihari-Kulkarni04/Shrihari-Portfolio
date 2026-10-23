@@ -75,8 +75,7 @@ function Contact() {
     <section className="contact-section" id="contact">
       <div className="contact-container">
         <span className="section-eyebrow">
-          <span className="status-dot" />
-          10 / CONTACT
+          09 / CONTACT
         </span>
 
         <div className="contact-heading">
