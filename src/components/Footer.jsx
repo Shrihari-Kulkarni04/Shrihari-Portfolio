@@ -28,9 +28,9 @@ const Footer = () => {
         {/* Main Footer */}
         <div className="footer-main">
           <div className="footer-brand">
-            <a href="#home" className="footer-logo">
-              SK.
-            </a>
+              <a href="#home" className="footer-logo">
+                SK<span className="footer-logo-dot">.</span>
+              </a>
 
             <p className="footer-tagline">
               Turning data into insights.
