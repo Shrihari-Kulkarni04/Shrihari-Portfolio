@@ -31,7 +31,7 @@ const Footer = () => {
             <a href="#home" className="footer-logo">
               <span className="footer-logo-bracket">&lt;</span>
               SK
-              <span className="footer-logo-bracket">/&gt;</span>
+              <span className="footer-logo-bracket">.</span>
             </a>
 
             <p className="footer-tagline">
