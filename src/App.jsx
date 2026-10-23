@@ -1,21 +1,4 @@
 import React, { useState } from 'react';
-import {
-  ArrowDownRight,
-  ArrowUpRight,
-  Download,
-  Github,
-  Linkedin,
-  Mail,
-  MapPin,
-  Code2,
-  GraduationCap,
-  Award,
-  BriefcaseBusiness,
-  ExternalLink,
-  Send,
-  Sparkles
-} from 'lucide-react';
-
 import Navbar from './components/Navbar';
 import ParticleBackground from "./components/ParticleBackground";
 import Hero from "./components/Hero";
@@ -28,6 +11,7 @@ import Resume from "./components/Resume";
 import Experience from "./components/Experience";
 import Milestones from "./components/Milestones";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 const navItems = [
   ['home', 'Home'], ['about', 'About'], ['education', 'Education'], ['certificates', 'Certificates'],
   ['projects', 'Projects'], ['skills', 'Skills'], ['resume', 'Resume'], ['experience', 'Experience'], ['contact', 'Contact']
@@ -72,7 +56,7 @@ function App() {
     <Contact />
     <main>
     </main>
-    <footer className="footer"><a className="brand" href="#home">KJ<span>.</span></a><p>Designed as a work in progress. Built with React.</p><a href="#home" className="back-top">BACK TO TOP ↑</a><small>© {new Date().getFullYear()} Shrihari Kulkarni · Replace sample details before publishing.</small></footer>
+    <Footer />
   </>;
 }
 export default App;

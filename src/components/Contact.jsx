@@ -134,7 +134,7 @@ function Contact() {
 
             <a
               className="contact-detail"
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/in/shrihari-kulkarni-aa57b931b/"
               target="_blank"
               rel="noopener noreferrer"
             >
