@@ -29,9 +29,7 @@ const Footer = () => {
         <div className="footer-main">
           <div className="footer-brand">
             <a href="#home" className="footer-logo">
-              <span className="footer-logo-bracket">&lt;</span>
-              SK
-              <span className="footer-logo-bracket">.</span>
+              SK.
             </a>
 
             <p className="footer-tagline">
