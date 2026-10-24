@@ -54,7 +54,7 @@ export default function Hero() {
         <p className="hero-greeting">Hello, I'm</p>
 
         <h1 className="hero-name">
-          Shrihari <span>Kulkarni.</span>
+          Shrihari <span>Kulkarni!</span>
         </h1>
 
         <h2 className="hero-role">

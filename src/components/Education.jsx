@@ -1,5 +1,10 @@
-
-import { GraduationCap, School, BookOpen, MapPin, CalendarDays } from "lucide-react";
+import {
+  GraduationCap,
+  School,
+  BookOpen,
+  MapPin,
+  CalendarDays,
+} from "lucide-react";
 
 const educationData = [
   {
@@ -8,20 +13,16 @@ const educationData = [
     institute: "Laxmi Institute of Technology",
     location: "Sarigam, Gujarat",
     duration: "July 2023 – July 2027",
-    result: [
-      { label: "CPI", value: "8.66" },
-      { label: "Semester 6 SPI", value: "8.61" },
-    ],
     icon: GraduationCap,
     current: true,
   },
   {
     level: "SENIOR SECONDARY · CLASS XII",
     degree: "Higher Secondary Education",
-    institute: "Gujarat Secondary and Higher Secondary Education Board",
+    institute:
+      "Gujarat Secondary and Higher Secondary Education Board",
     location: "Bhilad, Gujarat",
     duration: "May 2022 – May 2023",
-    result: [{ label: "Percentage", value: "65.00%" }],
     icon: BookOpen,
     current: false,
   },
@@ -31,7 +32,6 @@ const educationData = [
     institute: "CBSE",
     location: "Ankleshwar, Gujarat",
     duration: "March 2020 – August 2021",
-    result: [{ label: "Percentage", value: "80.00%" }],
     icon: School,
     current: false,
   },
@@ -39,12 +39,19 @@ const educationData = [
 
 export default function Education() {
   return (
-    <section className="education-section section-wrap" id="education">
+    <section
+      className="education-section section-wrap"
+      id="education"
+    >
       <div className="education-heading">
-        <p className="education-eyebrow">02 / EDUCATION</p>
+        <p className="education-eyebrow">
+          02 / EDUCATION
+        </p>
+
         <h2>
           My academic <span>journey.</span>
         </h2>
+
         <p className="education-description">
           My educational background and academic progress in
           computer science and engineering.
@@ -52,13 +59,16 @@ export default function Education() {
       </div>
 
       <div className="education-timeline">
-        {educationData.map((item, index) => {
+        {educationData.map((item) => {
           const Icon = item.icon;
 
           return (
-            <article className="education-card" key={item.level}>
+            <article
+              className="education-card"
+              key={item.level}
+            >
               <div className="education-marker">
-                <Icon size={21} />
+                <Icon size={23} />
               </div>
 
               <div className="education-card-content">
@@ -76,29 +86,21 @@ export default function Education() {
                 </div>
 
                 <h3>{item.degree}</h3>
+
                 <p className="education-institute">
                   {item.institute}
                 </p>
 
                 <div className="education-meta">
                   <span>
-                    <CalendarDays size={14} />
+                    <CalendarDays size={16} />
                     {item.duration}
                   </span>
 
                   <span>
-                    <MapPin size={14} />
+                    <MapPin size={16} />
                     {item.location}
                   </span>
-                </div>
-
-                <div className="education-results">
-                  {item.result.map((result) => (
-                    <div className="education-result" key={result.label}>
-                      <span>{result.label}</span>
-                      <strong>{result.value}</strong>
-                    </div>
-                  ))}
                 </div>
               </div>
             </article>
