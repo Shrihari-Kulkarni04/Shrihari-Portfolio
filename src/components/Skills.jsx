@@ -140,7 +140,7 @@ function Skills() {
                     }
                     onBlur={() => setActiveSkill(null)}
                   >
-                    <span>{skill.icon}</span>
+                    <span className="orbit-skill-icon">{skill.icon}</span>
                   </button>
                 ))}
               </div>

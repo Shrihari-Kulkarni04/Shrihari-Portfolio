@@ -3002,3 +3002,22 @@ main,
   display: inline-block;
   transform: rotate(calc(var(--skill-index) * (360deg / var(--skill-count)) * -1));
 }
+/* Keep skill labels readable while orbiting */
+.skills-universe .orbit-skill-icon {
+  display: inline-block;
+  animation: skillCounterRotate 20s linear infinite reverse;
+  transform-origin: center;
+}
+
+@keyframes skillCounterRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.skills-orbit-layout.is-paused .orbit-skill-icon {
+  animation-play-state: paused;
+}
