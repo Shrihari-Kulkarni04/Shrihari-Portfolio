@@ -3051,29 +3051,7 @@ main,
     animation: none;
   }
 }
-/* Skills Universe: keep skill cards horizontal as the orbit moves */
-.skills-universe .skill-orbit-track {
-  --orbit-duration: 24s;
-  animation: skillsOrbitSpin var(--orbit-duration) linear infinite;
-}
-
-.skills-universe .orbit-skill {
-  /* Keep the existing transform for circular positioning; counter-rotate
-     the card itself so the rotating parent does not tilt its contents. */
-  rotate: 0deg;
-  animation: skillsOrbitCardCounterRotate var(--orbit-duration, 24s) linear infinite;
-  transform-origin: center;
-}
-
-@keyframes skillsOrbitCardCounterRotate {
-  from { rotate: 0deg; }
-  to { rotate: -360deg; }
-}
-
-.skills-orbit-layout.is-paused .orbit-skill {
-  animation-play-state: paused;
-}
-
+/* Keep skill icons upright while orbiting */
 .skills-universe .orbit-skill-icon {
   display: inline-flex;
   align-items: center;
@@ -3082,13 +3060,18 @@ main,
   animation: none !important;
 }
 
+/* Remove counter-rotation from skill icons */
 .skills-universe .orbit-skill span {
-  transform: none !important;
+  transform: none;
+}
+/* Keep skill cards horizontal while moving around the orbit */
+.skills-universe .orbit-skill {
+  offset-anchor: center;
+  rotate: none;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .skills-universe .orbit-skill {
-    animation: none;
-    rotate: 0deg;
-  }
+/* Disable all independent icon spinning */
+.skills-universe .orbit-skill-icon {
+  animation: none !important;
+  transform: none !important;
 }
