@@ -3021,3 +3021,12 @@ main,
 .skills-orbit-layout.is-paused .orbit-skill-icon {
   animation-play-state: paused;
 }
+/* Original icons for Skills Universe */
+.skills-universe .skill-brand-icon {
+  display: block;
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+}

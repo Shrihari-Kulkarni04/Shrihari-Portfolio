@@ -1,5 +1,30 @@
-
 import React, { useState } from "react";
+
+import bootstrapIcon from "../assets/icons/bootstrap.svg";
+import cIcon from "../assets/icons/c.svg";
+import communicationIcon from "../assets/icons/communication.png";
+import cssIcon from "../assets/icons/css.svg";
+import databaseIcon from "../assets/icons/database.svg";
+import expressIcon from "../assets/icons/express.svg";
+import figmaIcon from "../assets/icons/figma.svg";
+import flaskIcon from "../assets/icons/flask.svg";
+import gitIcon from "../assets/icons/git.svg";
+import githubIcon from "../assets/icons/github.svg";
+import htmlIcon from "../assets/icons/html5.svg";
+import javascriptIcon from "../assets/icons/javascript.svg";
+import leadershipIcon from "../assets/icons/leadership.png";
+import micIcon from "../assets/icons/mic.svg";
+import mongodbIcon from "../assets/icons/mongodb.svg";
+import nodeIcon from "../assets/icons/nodedotjs.svg";
+import powerbiIcon from "../assets/icons/powerbi.svg";
+import pythonIcon from "../assets/icons/python.svg";
+import reactIcon from "../assets/icons/react.svg";
+import streamlitIcon from "../assets/icons/streamlit.svg";
+import tailwindIcon from "../assets/icons/tailwindcss.svg";
+import teamworkIcon from "../assets/icons/team.svg";
+import tensorflowIcon from "../assets/icons/tensorflow.svg";
+import viteIcon from "../assets/icons/vite.svg";
+import problemSolvingIcon from "../assets/icons/problem solving.svg";
 
 const skillGroups = [
   {
@@ -9,10 +34,10 @@ const skillGroups = [
     glow: "rgba(255, 56, 168, 0.25)",
     icon: "</>",
     skills: [
-      { name: "Python", icon: "Py", color: "#ffd343" },
-      { name: "JavaScript", icon: "JS", color: "#f7df1e" },
-      { name: "SQL", icon: "SQL", color: "#4db6ac" },
-      { name: "C", icon: "C", color: "#5b9bd5" },
+      { name: "Python", icon: pythonIcon, color: "#ffd343" },
+      { name: "JavaScript", icon: javascriptIcon, color: "#f7df1e" },
+      { name: "SQL", icon: databaseIcon, color: "#4db6ac" },
+      { name: "C", icon: cIcon, color: "#5b9bd5" },
     ],
   },
   {
@@ -22,12 +47,12 @@ const skillGroups = [
     glow: "rgba(57, 139, 255, 0.3)",
     icon: "✧",
     skills: [
-      { name: "HTML5", icon: "5", color: "#ff7043" },
-      { name: "CSS3", icon: "3", color: "#42a5f5" },
-      { name: "React", icon: "⚛", color: "#61dafb" },
-      { name: "Bootstrap", icon: "B", color: "#b388ff" },
-      { name: "Tailwind CSS", icon: "≈", color: "#38bdf8" },
-      { name: "Vite", icon: "V", color: "#bd93f9" },
+      { name: "HTML5", icon: htmlIcon, color: "#ff7043" },
+      { name: "CSS3", icon: cssIcon, color: "#42a5f5" },
+      { name: "React", icon: reactIcon, color: "#61dafb" },
+      { name: "Bootstrap", icon: bootstrapIcon, color: "#b388ff" },
+      { name: "Tailwind CSS", icon: tailwindIcon, color: "#38bdf8" },
+      { name: "Vite", icon: viteIcon, color: "#bd93f9" },
     ],
   },
   {
@@ -37,10 +62,10 @@ const skillGroups = [
     glow: "rgba(0, 217, 154, 0.25)",
     icon: "▤",
     skills: [
-      { name: "Node.js", icon: "JS", color: "#7cc84a" },
-      { name: "Express.js", icon: "Ex", color: "#ffffff" },
-      { name: "Flask", icon: "F", color: "#ffffff" },
-      { name: "MongoDB", icon: "DB", color: "#47b881" },
+      { name: "Node.js", icon: nodeIcon, color: "#7cc84a" },
+      { name: "Express.js", icon: expressIcon, color: "#ffffff" },
+      { name: "Flask", icon: flaskIcon, color: "#ffffff" },
+      { name: "MongoDB", icon: mongodbIcon, color: "#47b881" },
     ],
   },
   {
@@ -50,12 +75,12 @@ const skillGroups = [
     glow: "rgba(245, 166, 35, 0.25)",
     icon: "⚙",
     skills: [
-      { name: "Power BI", icon: "BI", color: "#f2c811" },
-      { name: "Git", icon: "Git", color: "#f05032" },
-      { name: "GitHub", icon: "GH", color: "#ffffff" },
-      { name: "Figma", icon: "Fi", color: "#a259ff" },
-      { name: "Streamlit", icon: "St", color: "#ff4b4b" },
-      { name: "TensorFlow", icon: "TF", color: "#ff9a32" },
+      { name: "Power BI", icon: powerbiIcon, color: "#f2c811" },
+      { name: "Git", icon: gitIcon, color: "#f05032" },
+      { name: "GitHub", icon: githubIcon, color: "#ffffff" },
+      { name: "Figma", icon: figmaIcon, color: "#a259ff" },
+      { name: "Streamlit", icon: streamlitIcon, color: "#ff4b4b" },
+      { name: "TensorFlow", icon: tensorflowIcon, color: "#ff9a32" },
     ],
   },
   {
@@ -65,11 +90,15 @@ const skillGroups = [
     glow: "rgba(168, 85, 247, 0.25)",
     icon: "♧",
     skills: [
-      { name: "Team Leadership", icon: "TL", color: "#c084fc" },
-      { name: "Communication", icon: "CM", color: "#67e8f9" },
-      { name: "Public Speaking", icon: "PS", color: "#f9a8d4" },
-      { name: "Teamwork", icon: "TW", color: "#86efac" },
-      { name: "Problem Solving", icon: "PS", color: "#fcd34d" },
+      { name: "Team Leadership", icon: leadershipIcon, color: "#c084fc" },
+      { name: "Communication", icon: communicationIcon, color: "#67e8f9" },
+      { name: "Public Speaking", icon: micIcon, color: "#f9a8d4" },
+      { name: "Teamwork", icon: teamworkIcon, color: "#86efac" },
+      {
+        name: "Problem Solving",
+        icon: problemSolvingIcon,
+        color: "#fcd34d",
+      },
     ],
   },
 ];
@@ -82,9 +111,7 @@ function Skills() {
     <section className="skills-universe" id="skills">
       <div className="skills-universe-container">
         <div className="skills-universe-heading">
-          <span className="skills-section-label">
-            05 / SKILLS
-          </span>
+          <span className="skills-section-label">05 / SKILLS</span>
 
           <h2>
             Skills <span>Universe</span>
@@ -140,7 +167,15 @@ function Skills() {
                     }
                     onBlur={() => setActiveSkill(null)}
                   >
-                    <span className="orbit-skill-icon">{skill.icon}</span>
+                    <span className="orbit-skill-icon">
+                      <img
+                        src={skill.icon}
+                        alt=""
+                        aria-hidden="true"
+                        className="skill-brand-icon"
+                        draggable="false"
+                      />
+                    </span>
                   </button>
                 ))}
               </div>
@@ -148,7 +183,9 @@ function Skills() {
               <button
                 className="skill-universe-center"
                 onClick={() => setPaused((current) => !current)}
-                aria-label={`${paused ? "Resume" : "Pause"} orbit animations`}
+                aria-label={`${
+                  paused ? "Resume" : "Pause"
+                } orbit animations`}
                 aria-pressed={paused}
               >
                 <span className="universe-center-icon">{group.icon}</span>
@@ -163,7 +200,9 @@ function Skills() {
           {activeSkill ? (
             <>
               Exploring{" "}
-              <strong>{activeSkill.substring(activeSkill.indexOf("-") + 1)}</strong>
+              <strong>
+                {activeSkill.substring(activeSkill.indexOf("-") + 1)}
+              </strong>
             </>
           ) : (
             "Explore my technical and professional skills"
