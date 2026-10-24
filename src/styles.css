@@ -3021,33 +3021,3 @@ main,
 .skills-orbit-layout.is-paused .orbit-skill-icon {
   animation-play-state: paused;
 }
-/* Skills Universe: orbit + independent icon rotation */
-.skills-universe .orbit-skill-icon {
-  display: inline-block;
-  transform: none;
-  transform-origin: center;
-  animation: skillIconSpin 3s linear infinite;
-  will-change: transform;
-}
-
-@keyframes skillIconSpin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* Pause icon rotation when the orbit is paused */
-.skills-orbit-layout.is-paused .orbit-skill-icon {
-  animation-play-state: paused;
-}
-
-/* Respect reduced-motion preferences */
-@media (prefers-reduced-motion: reduce) {
-  .skills-universe .orbit-skill-icon {
-    animation: none;
-  }
-}
