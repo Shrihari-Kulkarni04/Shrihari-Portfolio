@@ -93,7 +93,7 @@ function Skills() {
           <p>Technologies orbiting in perfect harmony</p>
 
           <div className="skills-instructions">
-            <span>/</span> Hover over skills · Click center to pause
+            Hover over skills · Click center to pause
           </div>
         </div>
 
