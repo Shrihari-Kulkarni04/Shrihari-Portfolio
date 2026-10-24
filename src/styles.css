@@ -3059,3 +3059,16 @@ main,
   background-color: rgba(8, 12, 22, 0.95);
   overflow: visible;
 }
+/* Improve About section text readability */
+.about-section p,
+.about-content p {
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* Improve service/interest card descriptions */
+.about-section .card p,
+.about-content .card p {
+  font-size: 15px;
+  line-height: 1.8;
+}
