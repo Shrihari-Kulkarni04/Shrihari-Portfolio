@@ -140,7 +140,7 @@ function Contact() {
             {/* WhatsApp */}
             <a
               className="contact-detail whatsapp-detail"
-              href={`https://wa.me/${whatsappNumber}`}
+              href={`tel:${whatsappNumber}`}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Contact me on WhatsApp"
