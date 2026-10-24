@@ -2837,3 +2837,17 @@ main,
     font-size: 12px;
   }
 }
+/* Make 02 / EDUCATION more prominent */
+.education-eyebrow {
+  font-size: 16px !important;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+  .education-eyebrow {
+    font-size: 13px !important;
+    letter-spacing: 1.8px;
+  }
+}
