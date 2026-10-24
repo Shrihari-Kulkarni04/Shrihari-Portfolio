@@ -2851,3 +2851,44 @@ main,
     letter-spacing: 1.8px;
   }
 }
+/* ===== GLOBAL SECTION LABEL SIZE ===== */
+
+.about-eyebrow,
+.education-eyebrow,
+.section-eyebrow,
+.skills-section-label,
+.eyebrow,
+.panel-index {
+  font-size: 16px !important;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  line-height: 1.8;
+}
+
+/* Other section-specific labels */
+.card-overline,
+.form-heading,
+.timeline-meta {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+/* Mobile responsive sizes */
+@media (max-width: 600px) {
+  .about-eyebrow,
+  .education-eyebrow,
+  .section-eyebrow,
+  .skills-section-label,
+  .eyebrow,
+  .panel-index {
+    font-size: 13px !important;
+    letter-spacing: 1.8px;
+  }
+
+  .card-overline,
+  .form-heading,
+  .timeline-meta {
+    font-size: 11px;
+  }
+}
