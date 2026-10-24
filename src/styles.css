@@ -3064,3 +3064,14 @@ main,
 .skills-universe .orbit-skill span {
   transform: none;
 }
+/* Keep skill cards horizontal while moving around the orbit */
+.skills-universe .orbit-skill {
+  offset-anchor: center;
+  rotate: none;
+}
+
+/* Disable all independent icon spinning */
+.skills-universe .orbit-skill-icon {
+  animation: none !important;
+  transform: none !important;
+}
