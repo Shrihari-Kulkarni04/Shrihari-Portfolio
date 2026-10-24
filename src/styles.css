@@ -3092,9 +3092,3 @@ main,
     rotate: 0deg;
   }
 }
-.orbit-skill {
-  transform:
-    rotate(var(--orbit-angle))
-    translateY(var(--orbit-radius))
-    rotate(calc(-1 * var(--orbit-angle)));
-}
