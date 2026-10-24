@@ -232,10 +232,6 @@ function Contact() {
                 {submitStatus}
               </p>
             )}
-
-            <p className="contact-form-note">
-              Your details will be used to respond to your message.
-            </p>
           </form>
         </div>
       </div>
