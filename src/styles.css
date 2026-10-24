@@ -3021,3 +3021,19 @@ main,
 .skills-orbit-layout.is-paused .orbit-skill-icon {
   animation-play-state: paused;
 }
+/* Fix Skills Universe rotation drift */
+.skills-universe .orbit-skill span {
+  transform: none !important;
+}
+
+.skills-universe .orbit-skill-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  animation: skillCounterRotate 24s linear infinite reverse !important;
+  transform-origin: center;
+}
+
+.skills-orbit-layout.is-paused .orbit-skill-icon {
+  animation-play-state: paused !important;
+}
