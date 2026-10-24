@@ -2998,3 +2998,8 @@ main,
 .skills-universe .orbit-ring {
   border-color: rgba(157, 167, 190, 0.075);
 }
+/* Keep skill icon text upright while orbit cards rotate */
+.skills-universe .orbit-skill span {
+  display: inline-block;
+  transform: rotate(calc(var(--skill-index) * (360deg / var(--skill-count)) * -1));
+}
