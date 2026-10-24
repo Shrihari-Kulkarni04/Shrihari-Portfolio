@@ -3051,16 +3051,3 @@ main,
     animation: none;
   }
 }
-/* Keep skill icons upright while orbiting */
-.skills-universe .orbit-skill-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transform: none !important;
-  animation: none !important;
-}
-
-/* Remove counter-rotation from skill icons */
-.skills-universe .orbit-skill span {
-  transform: none;
-}
