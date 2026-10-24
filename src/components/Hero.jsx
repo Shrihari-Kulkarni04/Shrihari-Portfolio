@@ -69,6 +69,27 @@ export default function Hero() {
           to solve real-world problems.
         </p>
 
+        <div className="hero-stats">
+          <div className="hero-stat">
+            <strong>8.61</strong>
+            <span>SPI · Semester 6</span>
+          </div>
+
+          <div className="hero-stat-divider" />
+
+          <div className="hero-stat">
+            <strong>8.63</strong>
+            <span>CGPA</span>
+          </div>
+
+          <div className="hero-stat-divider" />
+
+          <div className="hero-stat">
+            <strong>8.57</strong>
+            <span>CPI</span>
+          </div>
+        </div>
+
         <div className="hero-actions">
           <a
             className="hero-button hero-button-primary"
