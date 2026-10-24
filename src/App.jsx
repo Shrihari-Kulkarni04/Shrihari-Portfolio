@@ -9,7 +9,6 @@ import Certificates from "./components/Certificates";
 import Skills from "./components/Skills";
 import Resume from "./components/Resume";
 import Experience from "./components/Experience";
-import Milestones from "./components/Milestones";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 function App() {
@@ -29,7 +28,6 @@ function App() {
     <Skills />
     <Resume />
     <Experience />
-    <Milestones />
     <Contact />
     <main>
     </main>
