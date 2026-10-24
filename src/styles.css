@@ -2973,3 +2973,28 @@ main,
     font-size: 9px;
   }
 }
+/* Preserve original colors in Skills Universe */
+.skills-universe,
+.skills-universe * {
+  filter: none;
+  -webkit-filter: none;
+}
+
+.skills-universe .orbit-skill {
+  color: var(--skill-color) !important;
+  background-color: rgba(8, 12, 22, 0.95) !important;
+}
+
+.skills-universe .skill-universe-center {
+  color: #ffffff !important;
+  background-color: rgba(13, 17, 32, 0.94) !important;
+}
+
+.skills-universe .universe-center-icon {
+  color: #ffffff !important;
+  background-color: var(--group-color) !important;
+}
+
+.skills-universe .orbit-ring {
+  border-color: rgba(157, 167, 190, 0.075);
+}
