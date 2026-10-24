@@ -3021,19 +3021,3 @@ main,
 .skills-orbit-layout.is-paused .orbit-skill-icon {
   animation-play-state: paused;
 }
-/* Keep skill icons synchronized with the orbit */
-.skills-universe .orbit-skill span {
-  transform: none !important;
-}
-
-.skills-universe .orbit-skill-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  animation: skillCounterRotate 24s linear infinite reverse;
-  transform-origin: center;
-}
-
-.skills-orbit-layout.is-paused .orbit-skill-icon {
-  animation-play-state: paused;
-}
