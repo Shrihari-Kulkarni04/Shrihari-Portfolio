@@ -18,7 +18,7 @@ organization: "Code Intelligence Project",
 period: "Project Experience",
 type: "AI DEVELOPMENT",
 description:
-"Contributed to an AI-powered developer intelligence platform focused on repository analysis, software architecture understanding, and automated documentation. Traveled to Pune to represent and present the project.",
+"Contributed to the development of an AI-powered developer intelligence platform specializing in repository analysis, software architecture insights, and automated documentation. Represented the project in Pune, showcasing its capabilities and technical contributions.",
 tags: ["AI Integration", "Node.js", "GitHub", "Documentation"],
 },
 {
