@@ -18,7 +18,7 @@ organization: "Code Intelligence Project",
 period: "Project Experience",
 type: "AI DEVELOPMENT",
 description:
-"Contributed to the development of an AI-powered developer intelligence platform specializing in repository analysis, software architecture insights, and automated documentation. Represented the project in Pune, showcasing its capabilities and technical contributions.",
+"Contributed to developing CodeAtlas, an AI-powered developer intelligence platform for repository analysis, software architecture insights, and automated documentation. Represented the project at the IBM SkillsBuild Regional Finale in Pune.",
 tags: ["AI Integration", "Node.js", "GitHub", "Documentation"],
 },
 {
