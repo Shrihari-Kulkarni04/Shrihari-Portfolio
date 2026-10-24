@@ -3,8 +3,8 @@ import { Phone, MessageCircle } from "lucide-react";
 
 function Contact() {
   // Replace these placeholders with your actual number.
-  const phoneNumber = "Shrihari Kulkarni";
-  const whatsappNumber = "9157706898";
+  const phoneNumber = "+919157706898";
+  const whatsappNumber = "+919157706898";
 
   const [form, setForm] = useState({
     name: "",
@@ -140,7 +140,7 @@ function Contact() {
             {/* WhatsApp */}
             <a
               className="contact-detail whatsapp-detail"
-              href={`tel:${+919157706898}`}
+              href={`https://wa.me/${whatsappNumber}`}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Contact me on WhatsApp"
