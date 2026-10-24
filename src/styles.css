@@ -2892,3 +2892,21 @@ main,
     font-size: 11px;
   }
 }
+/* ===== NAVBAR TEXT SIZE IMPROVEMENT ===== */
+
+.nav-links a {
+  font-size: 14px !important;
+  font-weight: 600;
+}
+
+.nav-cta {
+  font-size: 14px !important;
+  font-weight: 600;
+}
+
+/* Mobile navbar */
+@media (max-width: 760px) {
+  .nav-links a {
+    font-size: 14px !important;
+  }
+}
