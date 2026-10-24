@@ -103,13 +103,13 @@ function Contact() {
 
             <a
               className="contact-detail"
-              href="mailto:YOUR_EMAIL@example.com"
+              href="mailto:shriharik571@gmail.com"
             >
               <span className="contact-icon">@</span>
 
               <span>
                 <small>Email</small>
-                <strong>YOUR_EMAIL@example.com</strong>
+                <strong>shriharik571@gmail.com</strong>
               </span>
 
               <span className="contact-arrow">↗</span>
