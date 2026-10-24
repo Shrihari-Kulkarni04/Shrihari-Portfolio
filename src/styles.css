@@ -3030,3 +3030,27 @@ main,
   pointer-events: none;
   user-select: none;
 }
+/* Skills Universe: display original icon colours */
+.skills-universe .skill-brand-icon {
+  display: block;
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  opacity: 1;
+  filter: none !important;
+  -webkit-filter: none !important;
+  mix-blend-mode: normal;
+}
+
+/* Prevent dark styling from affecting SVG icons */
+.skills-universe .orbit-skill {
+  color: var(--skill-color);
+}
+
+.skills-universe .orbit-skill-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  opacity: 1;
+}
