@@ -2910,3 +2910,17 @@ main,
     font-size: 14px !important;
   }
 }
+/* WhatsApp contact styling */
+.whatsapp-icon {
+  color: #25d366 !important;
+  border-color: rgba(37, 211, 102, 0.35) !important;
+  background: rgba(37, 211, 102, 0.08);
+}
+
+.whatsapp-detail:hover {
+  border-color: rgba(37, 211, 102, 0.5);
+}
+
+.whatsapp-detail:hover .contact-arrow {
+  color: #25d366;
+}

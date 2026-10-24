@@ -1,7 +1,11 @@
-
 import React, { useState } from "react";
+import { Phone, MessageCircle } from "lucide-react";
 
 function Contact() {
+  // Replace these placeholders with your actual number.
+  const phoneNumber = "Shrihari Kulkarni";
+  const whatsappNumber = "9157706898";
+
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -101,6 +105,7 @@ function Contact() {
               and opportunities to build meaningful technology.
             </p>
 
+            {/* Email */}
             <a
               className="contact-detail"
               href="mailto:shriharik571@gmail.com"
@@ -115,6 +120,44 @@ function Contact() {
               <span className="contact-arrow">↗</span>
             </a>
 
+            {/* Phone */}
+            <a
+              className="contact-detail"
+              href={`tel:${phoneNumber}`}
+            >
+              <span className="contact-icon">
+                <Phone size={19} />
+              </span>
+
+              <span>
+                <small>Phone</small>
+                <strong>Call me directly</strong>
+              </span>
+
+              <span className="contact-arrow">↗</span>
+            </a>
+
+            {/* WhatsApp */}
+            <a
+              className="contact-detail whatsapp-detail"
+              href={`https://wa.me/${whatsappNumber}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Contact me on WhatsApp"
+            >
+              <span className="contact-icon whatsapp-icon">
+                <MessageCircle size={20} />
+              </span>
+
+              <span>
+                <small>WhatsApp</small>
+                <strong>Let's chat on WhatsApp</strong>
+              </span>
+
+              <span className="contact-arrow">↗</span>
+            </a>
+
+            {/* GitHub */}
             <a
               className="contact-detail"
               href="https://github.com/Shrihari-Kulkarni04"
@@ -131,6 +174,7 @@ function Contact() {
               <span className="contact-arrow">↗</span>
             </a>
 
+            {/* LinkedIn */}
             <a
               className="contact-detail"
               href="https://www.linkedin.com/in/shrihari-kulkarni-aa57b931b/"
