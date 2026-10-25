@@ -8,8 +8,8 @@ const navItems = [
   ["certificates", "Certificates"],
   ["projects", "Projects"],
   ["skills", "Skills"],
-  ["resume", "Resume"],
   ["experience", "Experience"],
+  ["resume", "Resume"],
   ["contact", "Contact"],
 ];
 

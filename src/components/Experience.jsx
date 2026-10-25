@@ -48,7 +48,7 @@ return (
 <section className="experience-section" id="experience">
 <div className="experience-container">
 <span className="section-eyebrow">
-07 / EXPERIENCE
+06 / EXPERIENCE
 </span>
 
     <div className="experience-heading">

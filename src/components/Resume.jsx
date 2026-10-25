@@ -6,7 +6,7 @@ function Resume() {
     <section className="resume-section" id="resume">
       <div className="resume-container">
         <span className="section-eyebrow">
-          06 / RESUME
+          07 / RESUME
         </span>
 
         <div className="resume-content">

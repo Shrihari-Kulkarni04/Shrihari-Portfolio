@@ -7,8 +7,8 @@ import Education from "./components/Education";
 import Projects from "./components/Projects";
 import Certificates from "./components/Certificates";
 import Skills from "./components/Skills";
-import Resume from "./components/Resume";
 import Experience from "./components/Experience";
+import Resume from "./components/Resume";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 function App() {
@@ -26,8 +26,8 @@ function App() {
     <Certificates />
     <Projects />
     <Skills />
-    <Resume />
     <Experience />
+    <Resume />
     <Contact />
     <main>
     </main>
