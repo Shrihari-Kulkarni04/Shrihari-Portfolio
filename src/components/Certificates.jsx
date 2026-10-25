@@ -8,7 +8,6 @@ const certificates = [
     issuer: "IBM SkillsBuild / CSRBOX",
     description: "Four-week project-based learning program.",
     file: "agentic-ai.pdf",
-    image: "agentic-ai.png",
   },
   {
     number: "02",
@@ -17,7 +16,6 @@ const certificates = [
     description:
       "Recognition for individual excellence at the regional level.",
     file: "hackathon-individual.pdf",
-    image: "hackathon-individual.png",
   },
   {
     number: "03",
@@ -26,7 +24,6 @@ const certificates = [
     description:
       "Regional finalist recognition for Team Cortex.",
     file: "hackathon-team.pdf",
-    image: "hackathon-team.png",
   },
   {
     number: "04",
@@ -35,7 +32,6 @@ const certificates = [
     description:
       "Secured 1st position in Code Crasher at EKATRA 2026, held from 7–9 April 2026.",
     file: "code-crasher-winner.pdf",
-    image: "code-crasher-winner.png",
   },
   {
     number: "05",
@@ -44,7 +40,6 @@ const certificates = [
     description:
       "Internship experience in AI-assisted data analytics.",
     file: "inamigos-internship.pdf",
-    image: "inamigos-internship.png",
   },
   {
     number: "06",
@@ -53,7 +48,6 @@ const certificates = [
     description:
       "Secured First Position in the Best Idea category for the Virtual Tour Campus project on 16 April 2025.",
     file: "idea-fest-winner.pdf",
-    image: "idea-fest-winner.png",
   },
   {
     number: "07",
@@ -62,14 +56,12 @@ const certificates = [
     description:
       "Training in Python Programming, Data Analysis with Python, Artificial Intelligence and SAP Conversational AI.",
     file: "code-unnati.pdf",
-    image: "code-unnati.png",
     vertical: true,
   },
 ];
 
 function CertificateCard({ certificate }) {
   const pdfPath = `/certificates/${certificate.file}`;
-  const imagePath = `/certificates/${certificate.image}`;
   const isVertical = certificate.vertical === true;
 
   return (
@@ -85,10 +77,11 @@ function CertificateCard({ certificate }) {
         rel="noopener noreferrer"
         aria-label={`Open ${certificate.title}`}
       >
-        <img
-          src={imagePath}
-          alt={`${certificate.title} certificate`}
+        <iframe
+          src={`${pdfPath}#toolbar=0&navpanes=0&view=Fit`}
+          title={certificate.title}
           loading="lazy"
+          tabIndex={-1}
         />
       </a>
 

@@ -27,22 +27,25 @@ const Footer = () => {
       <div className="footer-container">
         {/* Main Footer */}
         <div className="footer-main">
-          <div className="footer-brand">
-              <a href="#home" className="footer-brand">
-                <img src="/logo.png" alt="SK Logo" />
-              </a>
+          <div className="footer-brand-section">
+          {/* Row 1: Logo */}
+          <a href="#home" className="footer-brand" aria-label="Go to home">
+            <img src="/logo.png" alt="SK." />
+          </a>
 
-            <p className="footer-tagline">
-              Turning data into insights.
-              <br />
-              Turning ideas into reality.
-            </p>
+          {/* Row 2: Tagline */}
+          <p className="footer-tagline">
+            Turning data into insights.
+            <br />
+            Turning ideas into reality.
+          </p>
 
-            <span className="footer-status">
-              <span className="footer-status-dot"></span>
-              Open to opportunities
-            </span>
-          </div>
+          {/* Row 3: Availability Button */}
+          <a href="#contact" className="footer-opportunity">
+            <span className="footer-status-dot" />
+            <span>Open to opportunities</span>
+          </a>
+        </div>
 
           {/* Quick Links */}
           <div className="footer-column">
