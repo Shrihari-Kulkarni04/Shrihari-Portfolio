@@ -3406,3 +3406,258 @@ main,
     letter-spacing: 2px;
   }
 }
+
+
+/* =========================================
+   CERTIFICATES — FINAL OVERRIDES
+   Preserve the rest of the portfolio styling.
+========================================= */
+
+.certificates-section {
+  padding: 80px 0;
+  scroll-margin-top: 90px;
+}
+
+.certificates-container {
+  width: min(1120px, 88%);
+  margin: 0 auto;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 20px;
+}
+
+.certificate-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  border-radius: 8px;
+  background: rgba(13, 15, 24, 0.96);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--cyan, #00d4ff);
+}
+
+/* PDF previews fill the card preview area.
+   Transparent iframe backgrounds cannot override the PDF viewer's own UI. */
+.certificate-preview {
+  display: flex;
+  width: 100%;
+  aspect-ratio: 297 / 210;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: transparent;
+  border-bottom: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.certificate-preview iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: transparent;
+  pointer-events: none;
+}
+
+.certificate-info {
+  padding: 20px;
+}
+
+.certificate-number {
+  display: inline-block;
+  color: var(--cyan, #00d4ff);
+  font-family: var(--mono, "DM Mono", monospace);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.certificate-info h3 {
+  margin: 12px 0 8px;
+  color: #f5f7ff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.certificate-info p {
+  margin: 8px 0;
+  color: #a5a9ba;
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+.certificate-info .certificate-issuer {
+  color: var(--cyan, #00d4ff);
+  font-weight: 600;
+}
+
+.certificate-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  color: var(--cyan, #00d4ff);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.certificate-link:hover {
+  text-decoration: underline;
+}
+
+/* Only Code Unnati is vertical and centered */
+.certificates-grid .certificate-card-vertical {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: min(100%, 435px);
+}
+
+.certificate-card-vertical .certificate-preview {
+  aspect-ratio: 210 / 297;
+}
+
+@media (max-width: 900px) {
+  .certificates-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .certificates-section {
+    padding: 55px 0;
+  }
+
+  .certificates-container {
+    width: 90%;
+  }
+
+  .certificates-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .certificates-grid .certificate-card-vertical {
+    grid-column: auto;
+    width: min(100%, 435px);
+    justify-self: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .certificate-card {
+    transition: none;
+  }
+
+  .certificate-card:hover {
+    transform: none;
+  }
+}
+/* Code Unnati: full-width portrait certificate */
+
+.certificate-card-vertical {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: min(100%, 435px);
+}
+
+.certificate-card-vertical .certificate-preview {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  padding: 0;
+  overflow: hidden;
+  background: transparent;
+  border: none;
+}
+
+.certificate-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.certificate-image-vertical {
+  width: 100%;
+  aspect-ratio: 210 / 297;
+  object-fit: contain;
+}
+/* Code Unnati: actual portrait layout */
+.certificates-grid .certificate-card-vertical {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: min(100%, 435px);
+}
+
+.certificates-grid .certificate-card-vertical .certificate-preview {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 210 / 297;
+  overflow: hidden;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.certificates-grid .certificate-card-vertical .certificate-preview iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+}
+/* Remove grey space around horizontal certificate previews */
+
+.certificates-grid .certificate-card:not(.certificate-card-vertical) .certificate-preview {
+  width: 100%;
+  aspect-ratio: 297 / 210;
+  height: auto;
+  padding: 0;
+  overflow: hidden;
+  background: transparent;
+  border: none;
+}
+
+.certificates-grid .certificate-card:not(.certificate-card-vertical) .certificate-preview iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+}
+
+/* Keep Code Unnati vertical and centered */
+
+.certificates-grid .certificate-card-vertical {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: min(100%, 435px);
+}
+
+.certificates-grid .certificate-card-vertical .certificate-preview {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 210 / 297;
+  padding: 0;
+  overflow: hidden;
+  background: transparent;
+  border: none;
+}
+
+.certificates-grid .certificate-card-vertical .certificate-preview iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+}
