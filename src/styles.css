@@ -3072,59 +3072,99 @@ main,
   font-size: 15px;
   line-height: 1.8;
 }
-/* ===== CONSISTENT TYPOGRAPHY SYSTEM ===== */
+/* ==========================================
+   GLOBAL TYPOGRAPHY — ALL PORTFOLIO SECTIONS
+   ========================================== */
 
 :root {
-  --text-subheading: 18px;
-  --text-body: 16px;
-  --text-small: 14px;
-  --text-label: 12px;
+  --font-section-label: 12px;
+  --font-description: 16px;
+  --font-card-title: 20px;
+  --font-metadata: 13px;
+  --font-tag: 12px;
+  --font-button: 14px;
 }
 
-/* Section subheadings */
-.section-subtitle,
-.section-description {
-  font-size: var(--text-subheading);
-  line-height: 1.8;
+/* All section descriptions */
+.hero-text,
+.hero-description,
+.section-description,
+.about-intro,
+.about-story > p,
+.about-focus-content p,
+.education-description,
+.timeline-content > p,
+.projects-heading > p,
+.project-description,
+.certificates-intro,
+.certificate-card p,
+.skills-universe-heading > p,
+.resume-copy > p:not(.eyebrow),
+.experience-card > p,
+.contact-copy > p {
+  font-size: var(--font-description) !important;
+  line-height: 1.8 !important;
 }
 
-/* Paragraphs and descriptions */
-p {
-  font-size: var(--text-body);
-  line-height: 1.8;
+/* All card titles */
+.about-focus-content h3,
+.education-card-content h3,
+.timeline-content h3,
+.certificate-info h3,
+.certificate-card h3,
+.project-card-content h3,
+.project-content h3,
+.experience-card h3,
+.skill-heading h3 {
+  font-size: var(--font-card-title) !important;
+  line-height: 1.5 !important;
 }
 
-/* Card titles */
-.card h3,
-.service-card h3,
-.project-card h3,
-.experience-card h3 {
-  font-size: var(--text-subheading);
-  line-height: 1.5;
+/* Dates, locations and secondary information */
+.education-meta,
+.education-institute,
+.timeline-org,
+.experience-org,
+.project-category,
+.contact-method strong {
+  font-size: var(--font-metadata) !important;
 }
 
-/* Card descriptions */
-.card p,
-.service-card p,
-.project-card p,
-.experience-card p {
-  font-size: var(--text-body);
-  line-height: 1.8;
+/* Tags and technology labels */
+.tag-row span,
+.skill-tags span,
+.tech-tag {
+  font-size: var(--font-tag) !important;
 }
 
-/* Small labels and metadata */
-.section-label,
-.card-label,
-.project-meta,
-.experience-date {
-  font-size: var(--text-label);
+/* Buttons and action links */
+.button,
+.hero-button,
+.project-link,
+.about-contact-link,
+.text-link {
+  font-size: var(--font-button) !important;
+}
+
+/* Section labels and small metadata */
+.about-eyebrow,
+.education-eyebrow,
+.eyebrow,
+.section-eyebrow,
+.skills-section-label,
+.education-level,
+.education-current,
+.card-overline {
+  font-size: var(--font-section-label) !important;
 }
 
 /* Responsive typography */
 @media (max-width: 768px) {
   :root {
-    --text-subheading: 17px;
-    --text-body: 15px;
-    --text-small: 13px;
+    --font-description: 15px;
+    --font-card-title: 18px;
+    --font-metadata: 13px;
+    --font-tag: 12px;
+    --font-button: 14px;
   }
 }
