@@ -28,8 +28,8 @@ const Footer = () => {
         {/* Main Footer */}
         <div className="footer-main">
           <div className="footer-brand">
-              <a href="#home" className="footer-logo">
-                SK<span className="footer-logo-dot">.</span>
+              <a href="#home" className="footer-brand">
+                <img src="/logo.png" alt="SK Logo" />
               </a>
 
             <p className="footer-tagline">

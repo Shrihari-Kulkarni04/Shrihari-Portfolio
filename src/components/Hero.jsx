@@ -71,21 +71,21 @@ export default function Hero() {
 
         <div className="hero-stats">
           <div className="hero-stat">
-            <strong>8.61</strong>
+            <strong>8.52</strong>
             <span>SPI · Semester 6</span>
           </div>
 
           <div className="hero-stat-divider" />
 
           <div className="hero-stat">
-            <strong>8.63</strong>
+            <strong>8.57</strong>
             <span>CGPA</span>
           </div>
 
           <div className="hero-stat-divider" />
 
           <div className="hero-stat">
-            <strong>8.57</strong>
+            <strong>8.63</strong>
             <span>CPI</span>
           </div>
         </div>

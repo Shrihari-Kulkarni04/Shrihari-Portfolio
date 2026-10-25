@@ -104,7 +104,7 @@ export default function Navbar() {
         className="brand"
         onClick={() => handleNavClick("home")}
       >
-        SK<span>.</span>
+        <img src="/logo.png" alt="SK Logo" />
       </a>
 
       <button
