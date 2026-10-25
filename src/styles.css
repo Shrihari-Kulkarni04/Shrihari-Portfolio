@@ -3072,3 +3072,59 @@ main,
   font-size: 15px;
   line-height: 1.8;
 }
+/* ===== CONSISTENT TYPOGRAPHY SYSTEM ===== */
+
+:root {
+  --text-subheading: 18px;
+  --text-body: 16px;
+  --text-small: 14px;
+  --text-label: 12px;
+}
+
+/* Section subheadings */
+.section-subtitle,
+.section-description {
+  font-size: var(--text-subheading);
+  line-height: 1.8;
+}
+
+/* Paragraphs and descriptions */
+p {
+  font-size: var(--text-body);
+  line-height: 1.8;
+}
+
+/* Card titles */
+.card h3,
+.service-card h3,
+.project-card h3,
+.experience-card h3 {
+  font-size: var(--text-subheading);
+  line-height: 1.5;
+}
+
+/* Card descriptions */
+.card p,
+.service-card p,
+.project-card p,
+.experience-card p {
+  font-size: var(--text-body);
+  line-height: 1.8;
+}
+
+/* Small labels and metadata */
+.section-label,
+.card-label,
+.project-meta,
+.experience-date {
+  font-size: var(--text-label);
+}
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  :root {
+    --text-subheading: 17px;
+    --text-body: 15px;
+    --text-small: 13px;
+  }
+}
