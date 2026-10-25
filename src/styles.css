@@ -3385,3 +3385,24 @@ main,
     font-size: 19px;
   }
 }
+/* ===== GLOBAL SECTION LABEL SIZE ===== */
+
+.about-eyebrow,
+.education-eyebrow,
+.section-eyebrow,
+.skills-section-label {
+  font-size: 13px;
+  letter-spacing: 2.5px;
+  line-height: 1.6;
+}
+
+/* Responsive sizing */
+@media (max-width: 600px) {
+  .about-eyebrow,
+  .education-eyebrow,
+  .section-eyebrow,
+  .skills-section-label {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+}
