@@ -3210,3 +3210,39 @@ main,
 .hero-scroll {
   font-size: 11px;
 }
+/* ===== EDUCATION TYPOGRAPHY ADJUSTMENTS ===== */
+
+.education-eyebrow {
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.education-heading h2 {
+  font-size: clamp(42px, 5.5vw, 68px);
+}
+
+.education-description {
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.education-card-content h3 {
+  font-size: clamp(19px, 2vw, 24px);
+}
+
+.education-institute {
+  font-size: 13px;
+}
+
+.education-meta {
+  font-size: 12px;
+}
+
+.education-level,
+.education-current {
+  font-size: 10px;
+}
+
+.education-result span {
+  font-size: 11px;
+}
