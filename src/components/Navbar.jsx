@@ -18,41 +18,92 @@ export default function Navbar() {
   const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
-    const sections = navItems
-      .map(([id]) => document.getElementById(id))
-      .filter(Boolean);
+    let ticking = false;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visibleSections = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort(
-            (a, b) =>
-              b.intersectionRatio - a.intersectionRatio
-          );
+    const updateActiveSection = () => {
+      const activationLine = window.innerHeight * 0.35;
+      let currentSection = "home";
+      let smallestDistance = Infinity;
 
-        if (visibleSections.length > 0) {
-          setActiveSection(visibleSections[0].target.id);
+      for (const [id] of navItems) {
+        const section = document.getElementById(id);
+
+        if (!section) continue;
+
+        const rect = section.getBoundingClientRect();
+
+        if (
+          rect.top <= activationLine &&
+          rect.bottom > activationLine
+        ) {
+          currentSection = id;
+          break;
         }
-      },
-      {
-        rootMargin: "-20% 0px -60% 0px",
-        threshold: [0, 0.1, 0.25, 0.5],
+
+        const distance = Math.abs(rect.top - activationLine);
+
+        if (distance < smallestDistance) {
+          smallestDistance = distance;
+          currentSection = id;
+        }
       }
-    );
 
-    sections.forEach((section) => observer.observe(section));
+      if (
+        window.innerHeight + window.scrollY >=
+        document.documentElement.scrollHeight - 5
+      ) {
+        currentSection = "contact";
+      }
 
-    return () => observer.disconnect();
+      setActiveSection(currentSection);
+      ticking = false;
+    };
+
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateActiveSection);
+        ticking = true;
+      }
+    };
+
+    const handleHashChange = () => {
+      const id = window.location.hash.replace("#", "");
+
+      if (navItems.some(([sectionId]) => sectionId === id)) {
+        setActiveSection(id);
+      }
+
+      window.requestAnimationFrame(updateActiveSection);
+    };
+
+    updateActiveSection();
+
+    window.addEventListener("scroll", handleScroll, {
+      passive: true,
+    });
+
+    window.addEventListener("resize", handleScroll);
+    window.addEventListener("hashchange", handleHashChange);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+      window.removeEventListener("hashchange", handleHashChange);
+    };
   }, []);
 
-  function closeMenu() {
+  function handleNavClick(id) {
+    setActiveSection(id);
     setMenuOpen(false);
   }
 
   return (
     <header className="navbar">
-      <a href="#home" className="brand" onClick={closeMenu}>
+      <a
+        href="#home"
+        className="brand"
+        onClick={() => handleNavClick("home")}
+      >
         SK<span>.</span>
       </a>
 
@@ -75,15 +126,21 @@ export default function Navbar() {
             key={id}
             href={`#${id}`}
             className={activeSection === id ? "active" : ""}
-            aria-current={activeSection === id ? "location" : undefined}
-            onClick={closeMenu}
+            aria-current={
+              activeSection === id ? "location" : undefined
+            }
+            onClick={() => handleNavClick(id)}
           >
             {label}
           </a>
         ))}
       </nav>
 
-      <a className="nav-cta" href="#contact" onClick={closeMenu}>
+      <a
+        className="nav-cta"
+        href="#contact"
+        onClick={() => handleNavClick("contact")}
+      >
         Let's talk <ArrowUpRight size={15} />
       </a>
     </header>

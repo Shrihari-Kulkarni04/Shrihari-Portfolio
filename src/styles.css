@@ -3661,3 +3661,95 @@ main,
   border: none;
   background: transparent;
 }
+/* =========================================
+   ACTIVE NAVBAR LINK HIGHLIGHT
+========================================= */
+
+.nav-links a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 6px;
+  color: #a5a9ba;
+  text-decoration: none;
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Animated underline */
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 2px;
+  height: 2px;
+  border-radius: 10px;
+  background: var(--cyan, #00d4ff);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.25s ease;
+}
+
+/* Active section */
+
+.nav-links a.active {
+  color: var(--cyan, #00d4ff);
+  background: rgba(0, 212, 255, 0.07);
+  box-shadow: inset 0 0 0 1px rgba(0, 212, 255, 0.12);
+}
+
+.nav-links a.active::after {
+  transform: scaleX(1);
+}
+
+/* Hover effect */
+
+.nav-links a:hover {
+  color: var(--cyan, #00d4ff);
+  background: rgba(0, 212, 255, 0.05);
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Keyboard accessibility */
+
+.nav-links a:focus-visible {
+  outline: 1px solid var(--cyan, #00d4ff);
+  outline-offset: 3px;
+}
+
+/* Mobile navigation */
+
+@media (max-width: 768px) {
+  .nav-links a {
+    width: 100%;
+    padding: 12px 14px;
+  }
+
+  .nav-links a::after {
+    left: 14px;
+    right: auto;
+    bottom: 7px;
+    width: 28px;
+  }
+
+  .nav-links a.active {
+    background: rgba(0, 212, 255, 0.08);
+  }
+}
+
+/* Reduced motion accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-links a,
+  .nav-links a::after {
+    transition: none;
+  }
+}
