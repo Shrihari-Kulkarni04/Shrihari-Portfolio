@@ -3753,3 +3753,140 @@ main,
     transition: none;
   }
 }
+.brand img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+  display: block;
+}
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.footer-brand img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  display: block;
+}
+
+.footer-brand:hover img {
+  transform: scale(1.05);
+  transition: transform 0.25s ease;
+}
+
+@media (max-width: 768px) {
+  .brand img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .footer-brand img {
+    width: 70px;
+    height: 70px;
+  }
+}
+/* =========================================
+   JUSTIFY TEXT ALIGNMENT
+========================================= */
+
+/* Card Selection and card descriptions */
+.card-selection p,
+.card-selection li,
+.card-selection .card-description,
+.card-selection .card-content {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Certificate list and certificate descriptions */
+.certificate-list p,
+.certificate-list li,
+.certificate-info p,
+.certificate-description {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Project descriptions */
+.project-card p,
+.project-content > p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* About section */
+.about-main p,
+.about-description {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Education and experience descriptions */
+.timeline-content > p,
+.experience-card > p,
+.experience-description {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* General descriptive text inside cards */
+.card-description,
+.card-selection p,
+.certificate-card p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Keep headings and short labels unchanged */
+.card-selection h1,
+.card-selection h2,
+.card-selection h3,
+.certificate-info h3,
+.project-content h3,
+.experience-card h3 {
+  text-align: left;
+}
+/* ===== CERTIFICATES: MOBILE RESPONSIVE FIX ===== */
+
+@media (max-width: 760px) {
+  .certificate-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .certificate-card {
+    display: block;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .certificate-preview {
+    display: grid;
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    aspect-ratio: 1.414 / 1;
+    overflow: hidden;
+  }
+
+  .certificate-preview img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 8px;
+  }
+
+  .certificate-info {
+    display: block;
+    padding: 18px;
+  }
+
+  .certificate-info h3,
+  .certificate-info p {
+    display: block;
+  }
+}
