@@ -3938,3 +3938,13 @@ main,
   margin: 0;
   white-space: nowrap;
 }
+.approach-content p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.about-story > p {
+  text-align: justify !important;
+  text-align-last: left;
+  width: 100%;
+  hyphens: auto;
+}
