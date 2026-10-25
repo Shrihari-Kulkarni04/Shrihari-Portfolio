@@ -3246,3 +3246,142 @@ main,
 .education-result span {
   font-size: 11px;
 }
+/* ===== CERTIFICATES SECTION — TYPOGRAPHY & CARDS ===== */
+
+.certificates-section {
+  width: min(1120px, 88%);
+  margin-inline: auto;
+  padding-top: 112px;
+  padding-bottom: 30px;
+}
+
+/* Section label: 03 / CERTIFICATES */
+.certificates-section .section-eyebrow {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: var(--cyan);
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+/* Main heading */
+.certificates-section .certificates-title {
+  margin: 0;
+  font-size: clamp(35px, 5vw, 59px);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.06em;
+}
+
+.certificates-section .certificates-title span {
+  color: transparent;
+  background: linear-gradient(110deg, var(--cyan), var(--violet));
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* Introductory description */
+.certificates-section .certificates-intro {
+  max-width: 520px;
+  margin-top: 15px;
+  margin-bottom: 38px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* Certificate card grid */
+.certificates-section .certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+/* Individual card */
+.certificates-section .certificate-card {
+  position: relative;
+  overflow: hidden;
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: linear-gradient(
+    140deg,
+    rgba(19, 21, 32, 0.83),
+    rgba(10, 11, 18, 0.8)
+  );
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.certificates-section .certificate-card:hover {
+  border-color: rgba(0, 212, 255, 0.4);
+  transform: translateY(-4px);
+}
+
+/* Card number */
+.certificates-section .certificate-number {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--cyan);
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+
+/* Certificate title */
+.certificates-section .certificate-card h3 {
+  margin: 0 0 12px;
+  color: #f2f3fa;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+}
+
+/* Certificate issuer */
+.certificates-section .certificate-issuer {
+  margin: 0 0 12px;
+  color: #c4c7d7;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+/* Certificate description */
+.certificates-section .certificate-card > p:last-child {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+/* Responsive layout */
+@media (max-width: 760px) {
+  .certificates-section {
+    padding-top: 80px;
+  }
+
+  .certificates-section .certificates-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .certificates-section .certificate-card {
+    padding: 23px;
+  }
+
+  .certificates-section .certificates-title {
+    font-size: clamp(36px, 10vw, 52px);
+  }
+}
+
+@media (max-width: 420px) {
+  .certificates-section {
+    width: 89%;
+  }
+
+  .certificates-section .certificate-card h3 {
+    font-size: 19px;
+  }
+}
