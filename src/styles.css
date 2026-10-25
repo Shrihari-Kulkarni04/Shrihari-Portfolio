@@ -2751,8 +2751,8 @@ main,
     margin-bottom: 16px;
   }
 }
-/* ===== EDUCATION TEXT SIZE IMPROVEMENTS ===== */
 
+/* ===== EDUCATION READABILITY IMPROVEMENTS ===== */
 .education-eyebrow {
   font-size: 13px;
   letter-spacing: 2.2px;
@@ -2781,8 +2781,8 @@ main,
 
 .education-card-content h3 {
   font-size: clamp(21px, 2.4vw, 27px);
-  line-height: 1.4;
-  letter-spacing: -0.5px;
+  line-height: 1.35;
+  letter-spacing: -0.6px;
   overflow-wrap: anywhere;
 }
 
@@ -2795,16 +2795,9 @@ main,
 
 .education-meta {
   font-size: 13px;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
-.education-meta svg {
-  width: 16px;
-  height: 16px;
-  flex-shrink: 0;
-}
-
-/* Mobile Responsive */
 @media (max-width: 600px) {
   .education-eyebrow {
     font-size: 11px;
@@ -2837,334 +2830,152 @@ main,
     font-size: 12px;
   }
 }
-/* Make 02 / EDUCATION more prominent */
-.education-eyebrow {
-  font-size: 16px !important;
-  font-weight: 800;
-  letter-spacing: 2.5px;
-  line-height: 1.8;
-}
 
-@media (max-width: 600px) {
-  .education-eyebrow {
-    font-size: 13px !important;
-    letter-spacing: 1.8px;
-  }
-}
-/* ===== GLOBAL SECTION LABEL SIZE ===== */
 
-.about-eyebrow,
-.education-eyebrow,
-.section-eyebrow,
-.skills-section-label,
-.eyebrow,
-.panel-index {
-  font-size: 16px !important;
-  font-weight: 800;
-  letter-spacing: 2.5px;
-  line-height: 1.8;
-}
-
-/* Other section-specific labels */
-.card-overline,
-.form-heading,
-.timeline-meta {
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-}
-
-/* Mobile responsive sizes */
-@media (max-width: 600px) {
-  .about-eyebrow,
-  .education-eyebrow,
-  .section-eyebrow,
-  .skills-section-label,
-  .eyebrow,
-  .panel-index {
-    font-size: 13px !important;
-    letter-spacing: 1.8px;
-  }
-
-  .card-overline,
-  .form-heading,
-  .timeline-meta {
-    font-size: 11px;
-  }
-}
-/* ===== NAVBAR TEXT SIZE IMPROVEMENT ===== */
-
-.nav-links a {
-  font-size: 14px !important;
-  font-weight: 600;
-}
-
-.nav-cta {
-  font-size: 14px !important;
-  font-weight: 600;
-}
-
-/* Mobile navbar */
-@media (max-width: 760px) {
-  .nav-links a {
-    font-size: 14px !important;
-  }
-}
-/* WhatsApp contact styling */
-.whatsapp-icon {
-  color: #25d366 !important;
-  border-color: rgba(37, 211, 102, 0.35) !important;
-  background: rgba(37, 211, 102, 0.08);
-}
-
-.whatsapp-detail:hover {
-  border-color: rgba(37, 211, 102, 0.5);
-}
-
-.whatsapp-detail:hover .contact-arrow {
-  color: #25d366;
-}
-/* Academic Stats in Hero Section */
-.hero-stats {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  margin: 28px 0;
-  flex-wrap: wrap;
-}
-
-.hero-stat {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.hero-stat strong {
-  font-size: 28px;
-  font-weight: 800;
-  color: var(--cyan);
-  line-height: 1.2;
-}
-
-.hero-stat span {
-  font-size: 11px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.65);
-  letter-spacing: 0.8px;
-}
-
-.hero-stat-divider {
-  width: 1px;
-  height: 38px;
-  background: rgba(255, 255, 255, 0.18);
-}
-
-@media (max-width: 480px) {
-  .hero-stats {
-    gap: 14px;
-    margin: 22px 0;
-  }
-
-  .hero-stat strong {
-    font-size: 23px;
-  }
-
-  .hero-stat span {
-    font-size: 9px;
-  }
-}
-/* Preserve original colors in Skills Universe */
-.skills-universe,
-.skills-universe * {
-  filter: none;
-  -webkit-filter: none;
-}
-
-.skills-universe .orbit-skill {
-  color: var(--skill-color) !important;
-  background-color: rgba(8, 12, 22, 0.95) !important;
-}
-
-.skills-universe .skill-universe-center {
-  color: #ffffff !important;
-  background-color: rgba(13, 17, 32, 0.94) !important;
-}
-
-.skills-universe .universe-center-icon {
-  color: #ffffff !important;
-  background-color: var(--group-color) !important;
-}
-
-.skills-universe .orbit-ring {
-  border-color: rgba(157, 167, 190, 0.075);
-}
-.skills-universe .orbit-skill span {
-  display: inline-block;
-  transform: rotate(calc(var(--skill-index) * (360deg / var(--skill-count)) * -1));
-}
-/* Keep skill labels readable while orbiting */
-.skills-universe .orbit-skill-icon {
-  display: inline-block;
-  animation: skillCounterRotate 20s linear infinite reverse;
-  transform-origin: center;
-}
-
-@keyframes skillCounterRotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.skills-orbit-layout.is-paused .orbit-skill-icon {
-  animation-play-state: paused;
-}
-/* Original icons for Skills Universe */
-.skills-universe .skill-brand-icon {
-  display: block;
-  width: 26px;
-  height: 26px;
-  object-fit: contain;
-  pointer-events: none;
-  user-select: none;
-}
-/* Fix Skills Universe SVG icon visibility */
-.skills-universe .orbit-skill-icon {
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-
-.skills-universe .skill-brand-icon {
-  display: block !important;
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
-  opacity: 1 !important;
-  visibility: visible !important;
-  filter: none !important;
-  -webkit-filter: none !important;
-  mix-blend-mode: normal !important;
-}
-
-/* Keep the icon container visible against the dark background */
-.skills-universe .orbit-skill {
-  background-color: rgba(8, 12, 22, 0.95);
-  overflow: visible;
-}
-/* Improve About section text readability */
-.about-section p,
-.about-content p {
-  font-size: 16px;
-  line-height: 1.9;
-}
-
-/* Improve service/interest card descriptions */
-.about-section .card p,
-.about-content .card p {
-  font-size: 15px;
-  line-height: 1.8;
-}
-/* ==========================================
-   GLOBAL TYPOGRAPHY — ALL PORTFOLIO SECTIONS
-   ========================================== */
-
+/* ==========================================================
+   GLOBAL TYPOGRAPHY STANDARDIZATION — ALL PORTFOLIO SECTIONS
+   Keeps existing colors, layouts, animations and main headings.
+   ========================================================== */
 :root {
-  --font-section-label: 12px;
-  --font-description: 16px;
-  --font-card-title: 20px;
-  --font-metadata: 13px;
-  --font-tag: 12px;
-  --font-button: 14px;
+  --type-body: 16px;
+  --type-card-title: 20px;
+  --type-subtitle: 18px;
+  --type-meta: 13px;
+  --type-label: 12px;
+  --type-control: 14px;
 }
 
-/* All section descriptions */
+/* Main descriptive copy across Home, About, Education, Projects,
+   Certificates, Skills, Resume, Experience and Contact. */
 .hero-text,
-.hero-description,
 .section-description,
-.about-intro,
-.about-story > p,
+.about-main p,
 .about-focus-content p,
 .education-description,
-.timeline-content > p,
-.projects-heading > p,
+.education-institute,
+.education-card-content p,
 .project-description,
-.certificates-intro,
+.projects-heading p,
+.certificate-description,
 .certificate-card p,
-.skills-universe-heading > p,
-.resume-copy > p:not(.eyebrow),
+.certificates-description,
+.skills-universe-heading p,
+.skills-instructions,
+.resume-text p,
+.resume-copy p,
+.timeline-content > p,
 .experience-card > p,
-.contact-copy > p {
-  font-size: var(--font-description) !important;
+.contact-copy p,
+.contact-description,
+.panel p {
+  font-size: var(--type-body) !important;
   line-height: 1.8 !important;
 }
 
-/* All card titles */
+/* Consistent card and sub-section headings. Main h1/h2 section titles
+   are intentionally preserved as the strongest visual hierarchy. */
 .about-focus-content h3,
 .education-card-content h3,
-.timeline-content h3,
-.certificate-info h3,
-.certificate-card h3,
 .project-card-content h3,
 .project-content h3,
+.certificate-info h3,
+.certificate-card h3,
+.timeline-content h3,
 .experience-card h3,
-.skill-heading h3 {
-  font-size: var(--font-card-title) !important;
+.contact-method h3,
+.panel h3 {
+  font-size: var(--type-card-title) !important;
+  line-height: 1.45 !important;
+}
+
+/* Secondary headings used inside cards and content blocks. */
+.about-main h3,
+.resume-text h3,
+.resume-copy h3,
+.contact-copy h4,
+.panel h4 {
+  font-size: var(--type-subtitle) !important;
   line-height: 1.5 !important;
 }
 
-/* Dates, locations and secondary information */
+/* Dates, institutions, locations and supporting metadata. */
 .education-meta,
 .education-institute,
+.education-current,
+.timeline-meta,
 .timeline-org,
 .experience-org,
+.project-number,
 .project-category,
-.contact-method strong {
-  font-size: var(--font-metadata) !important;
+.certificate-date,
+.certificate-issuer,
+.detail-row strong,
+.detail-row span,
+.contact-method small {
+  font-size: var(--type-meta) !important;
+  line-height: 1.65 !important;
 }
 
-/* Tags and technology labels */
-.tag-row span,
-.skill-tags span,
-.tech-tag {
-  font-size: var(--font-tag) !important;
-}
-
-/* Buttons and action links */
-.button,
-.hero-button,
-.project-link,
-.about-contact-link,
-.text-link {
-  font-size: var(--font-button) !important;
-}
-
-/* Section labels and small metadata */
+/* Eyebrows, overlines and compact labels. */
+.eyebrow,
+.hero-kicker,
+.section-eyebrow,
+.section-label,
 .about-eyebrow,
 .education-eyebrow,
-.eyebrow,
-.section-eyebrow,
-.skills-section-label,
 .education-level,
-.education-current,
-.card-overline {
-  font-size: var(--font-section-label) !important;
+.skills-section-label,
+.card-overline,
+.resume-tag,
+.panel-index,
+.availability,
+.form-heading {
+  font-size: var(--type-label) !important;
+  line-height: 1.6 !important;
 }
 
-/* Responsive typography */
+/* Buttons, navigation links and action links. */
+.nav-links a,
+.nav-cta,
+.button,
+.project-link,
+.resume-button,
+.text-link,
+.about-contact-link,
+.contact-submit,
+.back-top {
+  font-size: var(--type-control) !important;
+}
+
+/* Skill chips, technology tags and certificate/project tags. */
+.skill-tags span,
+.tech-tag,
+.project-tech-stack span,
+.certificate-tag,
+.experience-tags span,
+.tag-row span {
+  font-size: var(--type-label) !important;
+  line-height: 1.5 !important;
+}
+
+/* Small utility text is consistent too, without resizing logos/icons. */
+.hero-socials,
+.detail-row strong,
+.scroll-cue,
+.floating-tag,
+.visual-top,
+.visual-bottom,
+.about-signoff {
+  font-size: var(--type-meta) !important;
+}
+
 @media (max-width: 768px) {
   :root {
-    --font-description: 15px;
-    --font-card-title: 18px;
-    --font-metadata: 13px;
-    --font-tag: 12px;
-    --font-button: 14px;
+    --type-body: 15px;
+    --type-card-title: 18px;
+    --type-subtitle: 17px;
+    --type-meta: 13px;
+    --type-label: 12px;
+    --type-control: 14px;
   }
 }
