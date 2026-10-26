@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Phone, MessageCircle } from "lucide-react";
 
 function Contact() {
-  // Replace these placeholders with your actual number.
   const phoneNumber = "+919157706898";
   const whatsappNumber = "+919157706898";
 
@@ -196,7 +195,7 @@ function Contact() {
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="contact-form-heading">
               <h3>Send a message</h3>
-              <span>I'd love to hear from you.</span>
+              <span>Get in touch to discuss opportunities.</span>
             </div>
 
             <div className="contact-form-row">
