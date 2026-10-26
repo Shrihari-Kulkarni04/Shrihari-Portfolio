@@ -123,7 +123,7 @@ export default function Certificates() {
     <section className="certificates-section" id="certificates">
       <div className="certificates-container">
         <span className="section-eyebrow">
-          03 / CERTIFICATES
+          07 / CERTIFICATES
         </span>
 
         <h2 className="certificates-title">
