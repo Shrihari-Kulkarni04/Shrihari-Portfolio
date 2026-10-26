@@ -1,4 +1,4 @@
-# Shrihari Kulkarni — Personal Portfolio
+# Shrihari Kulkarni - Personal Portfolio
 
 <p align="center">
 &#x20; <strong>Turning Data into Insights. Turning Ideas into Reality.</strong>
