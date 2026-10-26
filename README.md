@@ -1,17 +1,17 @@
 # Shrihari Kulkarni — Personal Portfolio
 
-\<p align="center">
-&#x20; \<strong>Turning Data into Insights. Turning Ideas into Reality.\</strong>
-\</p>
+<p align="center">
+&#x20; <strong>Turning Data into Insights. Turning Ideas into Reality.</strong>
+</p>
 
-\<p align="center">
+<p align="center">
 &#x20; A personal portfolio showcasing my projects, technical skills, education, certifications, and experience across Data Science, Artificial Intelligence, and Software Development.
-\</p>
+</p>
 
-\<p align="center">
-&#x20; \<a href="[https://github.com/Shrihari-Kulkarni04](https://github.com/Shrihari-Kulkarni04)">GitHub\</a> •
-&#x20; \<a href="[https://www.linkedin.com/in/shrihari-kulkarni-aa57b931b/](https://www.linkedin.com/in/shrihari-kulkarni-aa57b931b/)">LinkedIn\</a>
-\</p>
+<p align="center">
+&#x20; <a href="[https://github.com/Shrihari-Kulkarni04](https://github.com/Shrihari-Kulkarni04)">GitHub</a> •
+&#x20; <a href="[https://www.linkedin.com/in/shrihari-kulkarni-aa57b931b/](https://www.linkedin.com/in/shrihari-kulkarni-aa57b931b/)">LinkedIn</a>
+</p>
 
 ---
 
@@ -115,7 +115,7 @@ I'm interested in learning, building practical projects, and exploring opportuni
 
 ---
 
-\<p align="center">
-&#x20; \<strong>Turning data into insights. Turning ideas into reality.\</strong>
-\</p>
+<p align="center">
+&#x20; <strong>Turning data into insights. Turning ideas into reality.</strong>
+</p>
 
