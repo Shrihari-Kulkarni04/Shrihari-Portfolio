@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from "react";
 
 export default function ParticleBackground() {
@@ -55,7 +54,7 @@ export default function ParticleBackground() {
     const stars = [];
 
     function createStars(x, y) {
-      for (let i = 0; i < 7; i++) {
+      for (let i = 0; i < 2; i++) {
         const angle = Math.random() * Math.PI * 2;
         const speed = Math.random() * 2 + 0.5;
 

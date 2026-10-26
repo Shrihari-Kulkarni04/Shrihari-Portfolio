@@ -3948,3 +3948,33 @@ main,
   width: 100%;
   hyphens: auto;
 }
+/* Certificate image previews */
+
+.certificate-preview {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.certificate-preview img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.certificate-card-vertical .certificate-preview img {
+  object-fit: contain;
+}
+
+/* Mobile certificate description spacing */
+
+@media (max-width: 768px) {
+  .certificate-info > p:not(.certificate-issuer) {
+    text-align: left;
+    word-spacing: normal;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+}

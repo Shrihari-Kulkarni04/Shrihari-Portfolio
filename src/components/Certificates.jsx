@@ -8,6 +8,7 @@ const certificates = [
     issuer: "IBM SkillsBuild / CSRBOX",
     description: "Four-week project-based learning program.",
     file: "agentic-ai.pdf",
+    preview: "agentic-ai.png",
   },
   {
     number: "02",
@@ -16,14 +17,15 @@ const certificates = [
     description:
       "Recognition for individual excellence at the regional level.",
     file: "hackathon-individual.pdf",
+    preview: "hackathon-individual.png",
   },
   {
     number: "03",
     title: "Team Cortex — Regional Finalist",
     issuer: "SkillUp Hackathon 2026",
-    description:
-      "Regional finalist recognition for Team Cortex.",
+    description: "Regional finalist recognition for Team Cortex.",
     file: "hackathon-team.pdf",
+    preview: "hackathon-team.png",
   },
   {
     number: "04",
@@ -32,6 +34,7 @@ const certificates = [
     description:
       "Secured 1st position in Code Crasher at EKATRA 2026, held from 7–9 April 2026.",
     file: "code-crasher-winner.pdf",
+    preview: "code-crasher-winner.png",
   },
   {
     number: "05",
@@ -40,6 +43,7 @@ const certificates = [
     description:
       "Internship experience in AI-assisted data analytics.",
     file: "inamigos-internship.pdf",
+    preview: "inamigos-internship.png",
   },
   {
     number: "06",
@@ -48,6 +52,7 @@ const certificates = [
     description:
       "Secured First Position in the Best Idea category for the Virtual Tour Campus project on 16 April 2025.",
     file: "idea-fest-winner.pdf",
+    preview: "idea-fest-winner.png",
   },
   {
     number: "07",
@@ -56,12 +61,14 @@ const certificates = [
     description:
       "Training in Python Programming, Data Analysis with Python, Artificial Intelligence and SAP Conversational AI.",
     file: "code-unnati.pdf",
+    preview: "code-unnati.png",
     vertical: true,
   },
 ];
 
 function CertificateCard({ certificate }) {
   const pdfPath = `/certificates/${certificate.file}`;
+  const previewPath = `/certificates/previews/${certificate.preview}`;
   const isVertical = certificate.vertical === true;
 
   return (
@@ -75,13 +82,13 @@ function CertificateCard({ certificate }) {
         href={pdfPath}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label={`Open ${certificate.title}`}
+        aria-label={`Open ${certificate.title} PDF`}
       >
-        <iframe
-          src={`${pdfPath}#toolbar=0&navpanes=0&view=Fit`}
-          title={certificate.title}
+        <img
+          src={previewPath}
+          alt={`${certificate.title} certificate preview`}
           loading="lazy"
-          tabIndex={-1}
+          decoding="async"
         />
       </a>
 
